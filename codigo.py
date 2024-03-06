@@ -1,15 +1,13 @@
 
 
 nombre = "Arian"
-
 apellido = "Pucheta"
-
-
-saludo = ("Hola "+ nombre + " " + apellido " Como estas?")
+saludo = "Hola " + nombre + " " + apellido + ", ¿Cómo estás?"
 print(saludo)
 
 
-# ESTO ESTA MODIFICADO
+
+# ESTO ESTA Corregido
 
 
 
