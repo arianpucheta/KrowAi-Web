@@ -1,0 +1,156 @@
+// ---------RESPONSIBE HEADER----------
+
+
+let prevScrollPos = window.pageYOffset;
+
+window.onscroll = function() {
+    const currentScrollPos = window.pageYOffset;
+
+    if (prevScrollPos > currentScrollPos) {
+        document.getElementById("miHeader").classList.add("visible");
+        document.getElementById("miHeader").classList.remove("invisible");
+    } else {
+        document.getElementById("miHeader").classList.add("invisible");
+        document.getElementById("miHeader").classList.remove("visible");
+    }
+
+    prevScrollPos = currentScrollPos;
+};
+
+
+
+
+// -----------INFORMACION DE CATEGORIAS--------------
+
+
+
+
+
+
+
+// -------------Informacion de servicios------------
+
+// let mostrador = document.getElementById("mostrador");
+// let seleccion = document.getElementById("seleccion");
+// let imgSeleccionada = document.getElementById("img");
+// let modeloSeleccionado = document.getElementById("modelo");
+// let descripSeleccionada = document.getElementById("descripcion");
+// let spanInfSeleccionado = document.getElementById("span-inf");
+
+// function cargar(item){
+// 	quitarBordes();
+// 	mostrador.style.width = "60%";
+// 	seleccion.style.width = "40%";
+// 	seleccion.style.opacity = "1";
+// 	seleccion.style.border = "2px solid #00155a"; 
+// 	item.style.border = "2px solid #00155a";
+
+// 	imgSeleccionada.src = item.getElementsByTagName("img")[0].src;
+
+// 	modeloSeleccionado.innerHTML =	item.getElementsByTagName("p")[0].innerHTML;
+
+// 	descripSeleccionada.innerHTML = "Descripcion del modelo ";
+
+// 	spanInfSeleccionado.innerHTML =	item.getElementsByTagName("span")[0].innerHTML;
+
+// }
+
+// function cerrar(){
+//     mostrador.style.width = "100%";
+//     seleccion.style.width = "0%";
+//     seleccion.style.opacity = "0";
+//     quitarBordes();
+// }
+// function quitarBordes(){
+//     var items = document.getElementsByClassName("item");
+//     for(i=0;i <items.length; i++){
+//         items[i].style.border = "";
+//     }
+// }
+
+
+//----------------- FUNCION DE BUSQUEDA --------------------------
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('search-input');
+    const searchResults = document.getElementById('search-results-container');
+    const searchForm = document.getElementById('search-form');
+    const searchButton = document.getElementById('search-button');
+
+    // Guarda el color original del texto del placeholder
+    const originalPlaceholderColor = getComputedStyle(searchInput).getPropertyValue('');
+
+    // Simula una lista de datos (puedes reemplazar esto con tu conjunto de datos real)
+    const data = [
+        { title: 'Resultado 1', content: 'Descripción del resultado 1.' },
+        { title: 'Resultado 2', content: 'Descripción del resultado 2.' },
+        // Agrega más datos según sea necesario
+    ];
+
+    searchForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        performSearch();
+    });
+
+    searchButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        performSearch();
+    });
+
+    async function performSearch() {
+        const searchTerm = searchInput.value.toLowerCase();
+        const filteredResults = filterResults(data, searchTerm);
+        displayResults(filteredResults);
+
+        // Envía la información de búsqueda al servidor usando fetch
+        try {
+            const response = await fetch('/tu_ruta_del_servidor', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ searchTerm: searchTerm }),
+            });
+
+            if (response.ok) {
+                console.log('Búsqueda enviada exitosamente al servidor.');
+            } else {
+                console.error('Error al enviar la búsqueda al servidor.');
+            }
+        } catch (error) {
+            console.error('Error de red:', error);
+        }
+    }
+
+    function filterResults(data, searchTerm) {
+        return data.filter(item => 
+            item.title.toLowerCase().includes(searchTerm) || 
+            item.content.toLowerCase().includes(searchTerm)
+        );
+    }
+
+    // function displayResults(results) {
+    //     searchResults.innerHTML = ''; // Limpiar resultados anteriores
+
+    //     if (results.length === 0) {
+    //         searchResults.innerHTML = '<p>No se encontraron resultados.</p>';
+    //     } else {
+    //         results.forEach(result => {
+    //             const resultElement = document.createElement('div');
+    //             resultElement.innerHTML = `<h3>${result.title}</h3><p>${result.content}</p>`;
+    //             searchResults.appendChild(resultElement);
+    //         });
+    //     }
+    // }
+});
+
+
+
+// ------------------------------------------------------
+
+
+
+
+

@@ -1,0 +1,66 @@
+
+
+
+/* BOTONES */
+
+
+button {
+    margin: auto;
+    padding: 10px 100px;
+    background-color: #00155a;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+
+/* FOOTER */
+
+.footer-links {
+    width: 100%;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.links a{
+    font-size: 11px;
+    margin-left: 10px;
+}
+
+.footer-derechosdeautor {
+    font-size: 11px;
+}
+
+
+/* INPUT */
+
+input{
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #bbb;
+    margin: auto;
+}
+
+
+
+
+/*  */
+
+
+
+            /*responcive*/
+
+    @media screen and (max-width: 768px) {
+
+}
