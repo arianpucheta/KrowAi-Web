@@ -1,11 +1,26 @@
 # Hotel-CrowAi
-Pagina de hoteles crowai
+
+Pagina crowai.com
 
 
 ## Descripcion
 
-Hoteles de temporadas.
+Primera version 0.1
 
-<!-- PROBANDO README 2.0--> 
+- Objetivo
+
+* Crear una pagina visualmente atractiva
+* Facil de usar
+* Promocionarla y atraer publico potencial
+* Vender productos y servicios para llamar la atencion
+
+
+
+## Proxima version 0.2
+
+* Agregar funcion de carrito
+* Agregar mas integrantes a la pagina
+
+
 
 
