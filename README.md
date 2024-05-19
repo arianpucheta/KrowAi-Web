@@ -22,5 +22,3 @@ Primera version 0.1
 * Agregar mas integrantes a la pagina
 
 
-
-Rama nuevaa
