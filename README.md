@@ -1,4 +1,4 @@
-# Hotel-CrowAi
+# Pagina-CrowAi
 
 Pagina crowai.com
 
@@ -7,7 +7,7 @@ Pagina crowai.com
 
 Primera version 0.1
 
-- Objetivo
+## Objetivo
 
 * Crear una pagina visualmente atractiva
 * Facil de usar
