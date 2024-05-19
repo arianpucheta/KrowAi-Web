@@ -30,8 +30,13 @@ window.onscroll = function() {
 
 // -------------Informacion de productos------------
 
-let products = [];
-let total
+function enviarMensajeWhatsApp(nombreProducto, precioProducto) {
+    const numeroTelefono = '541136479845';
+    const mensaje = `Hola!, me interesa el producto: ${nombreProducto} con precio: $${precioProducto}`;
+    const mensajeCodificado = encodeURIComponent(mensaje);
+    const url = `https://wa.me/${numeroTelefono}?text=${mensajeCodificado}`;
+    window.open(url, '_blank');
+}
 
 
 
