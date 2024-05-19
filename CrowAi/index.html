@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <title>Servicios CrowAi</title>
-    <link rel="stylesheet" href="/Servicios Crowai/Servicios CrowAi/activos/css/css-pag-principal/estilos.css">
+    <link rel="stylesheet" href="/CrowAi/activos/css/css-pag-principal/estilos.css">
 </head>
 <body>
 
@@ -18,30 +18,30 @@
 
     <header class="header" id="miHeader">
 
-        <a href="/Servicios CrowAi/index.html">
+        <a href="/CrowAi/index.html">
             <div class="logo">
-                <img src="/Servicios Crowai/Servicios CrowAi/" alt="Logo de CrowAi">
+                <img src="/CrowAi/activos/Imagenes/global/logo-CrowAi.jpg" alt="Logo de CrowAi">
             </div>
         </a>
         
             <form class="search-container" id="search-form">     
-                <input type="text" class="input-de-busqueda" id="search-input" placeholder="Buscar servicios, trabajos y mas...">
+                <input type="text" class="input-de-busqueda" id="search-input" placeholder="Buscar no disponible">
                     <button class="boton-buscar" id="search-button" type="submit"><i class="fas fa-search"></i></button>
             </form>
 
         <nav>
             <ul class="info-nav">
-                    <li><a href="MI SERVICIO">Mi servicio</a></li>
-                    <li><a href="/Servicios CrowAi/activos/crear-cuenta/crear-cuenta.html">Registrarse</a></li>
-                    <li><a href="/Servicios CrowAi/activos/login/login.html">Iniciar</a></li>
+                    <li><a href="MI SERVICIO">Mi cuenta</a></li>
+                    <li><a href="NO DISPONIBLE">Registrarse</a></li>
+                    <li><a href="NO DISPONIBLE">Iniciar</a></li>
             </ul>
         <ul class="menu-horizontal">
             <li>
-                <a href="#"><img src="/Servicios CrowAi/activos/Imagenes/pag-principal/menu-regular-24.png"/></a>
+                <a href="#"><img src="/CrowAi/activos/Imagenes/pag-principal/menu-regular-24.png"/></a>
                 <ul class="menu-vertical">
-                    <li><a href="#">Mi servicio</a></li>
-                    <li><a href="/Servicios CrowAi/activos/crear-cuenta/crear-cuenta.html">Registrarse</a></li>
-                    <li><a href="/Servicios CrowAi/activos/login/login.html">Iniciar</a></li>
+                    <li><a href="#">Mi cuenta</a></li>
+                    <li><a href="#">Registrarse</a></li>
+                    <li><a href="#">Iniciar</a></li>
                 </ul>
             </li>
         </ul>
@@ -54,44 +54,9 @@
 
 
     <section class="contenido-categorias">
-        <div class="mostrador-categorias" id="mostrador-categorias">
-            <div class="h2-mostrador">
-                <h2>Categorias de servicios</h2>
-            </div>
-            <div class="fila-categorias">
+        
+        <h2>PONER CUADROS</h2>
 
-                <a href="PROFESIONALES">
-                <div class="div-categorias" onclick="">
-                    <div class="contenedor-foto-categorias">
-                        <img src="/Servicios CrowAi/activos/Imagenes/pag-principal/maletin.png" alt="maletin-profesional">
-                        <p class="descripcion-categorias">PROFESIONALES</p>
-                    </div>
-                </div>                     
-                </a>
-
-                <a href="PRESTADORES">
-                <div class="div-categorias" onclick="">
-                    <div class="contenedor-foto-categorias">
-                        <img src="/Servicios CrowAi/activos/Imagenes/pag-principal/casco-construccion.png" alt="casco">
-                        <p class="descripcion-categorias">PRESTADORES DE SERVICIOS</p>
-                    </div>
-                </div>                     
-                </a>
-
-                <a href="/Servicios CrowAi/activos/login/login.html">
-                <div class="div-categorias" onclick="">
-                    <div class="contenedor-foto-categorias">
-                        <h3 class="descripcion-ingresar-perfil">Ingresá a tu cuenta</h3>
-                        <img src="/Servicios CrowAi/activos/Imagenes/pag-principal/iniciar-perfil.png" alt="login">
-                        <p class="descripcion-ingresar-perfil">Disfruta de servicios sin limites</p>
-                    </div>
-                    <button class="button-ingresar-cuenta">Ingresar</button>
-                </div>                     
-                </a>
-    
-
-            </div>          
-        </div>
     </section>
 
 </div>
@@ -103,7 +68,7 @@
     <section class="contenido">
         <div class="mostrador" id="mostrador">
             <div class="h2-servicios">
-                <h2>Encuentra tu servicio ideal</h2>
+                <h2>Encuentra lo que buscas</h2>
             </div>
             <div class="fila">
                 <div class="item" onclick="cargar(this)">
@@ -146,7 +111,7 @@
         </div>
 
         <!--  CONTENEDOR DEL ITEM SELECCIONADO -->
-<!-- 
+
         <div class="seleccion" id="seleccion">
             <div class="cerrar" onclick="cerrar()">
                 &#x2715
@@ -169,59 +134,11 @@
                     <button>AGREGAR AL CARRITO</button>
                 </div>
             </div>
-        </div> -->
+        </div>
 
 </div>
 
-<div class="inf-servicios">
 
-        <section class="contenido">
-                <div class="mostrador" id="mostrador">
-                    <div class="h2-servicios">
-                        <h2>Encuentra tu servicio ideal</h2>
-                    </div>
-                    <div class="fila">
-                        <div class="item" onclick="cargar(this)">
-                            <div class="contenedor-foto">
-                                <img src="1.png" alt="">
-                                <p class="descripcion">1</p>
-                                <span class="span-inf"></span>
-                            </div>
-                        </div>              
-                        <div class="item" onclick="cargar(this)">
-                            <div class="contenedor-foto">
-                                <img src="2.png" alt="">
-                                <p class="descripcion">2</p>
-                                <span class="span-inf"></span>
-                            </div>
-                        </div>              
-                        <div class="item" onclick="cargar(this)">
-                            <div class="contenedor-foto">
-                                <img src="3.png" alt="">
-                                <p class="descripcion">3</p>
-                                <span class="span-inf"></span>
-                            </div>
-                        </div>              
-                        <div class="item" onclick="cargar(this)">
-                            <div class="contenedor-foto">
-                                <img src="4.png" alt="">
-                                <p class="descripcion">4</p>
-                                <span class="span-inf"></span>
-                            </div>
-                        </div>              
-                        <div class="item" onclick="cargar(this)">
-                            <div class="contenedor-foto">
-                                <img src="4.png" alt="">
-                                <p class="descripcion">5</p>
-                                <span class="span-inf"></span>
-                            </div>
-                        </div>
-                    </div>          
-                </div>
-            
-        </section>
-        
-</div>
 
 <div>
     
@@ -238,16 +155,16 @@
 
 
 <footer>
-    <a href="/Servicios CrowAi/index.html">
+    <a href="/CrowAi/index.html">
         <div class="logo">
-            <img src="/Servicios CrowAi/activos/Imagenes/global/logo-CrowAi.jpg" alt="Logo de CrowAi">
+            <img src="/CrowAi/activos/Imagenes/global/logo-CrowAi.jpg" alt="Logo de CrowAi">
         </div>
     </a>
     <div class="footer-container">
         <!-- Sección de Contacto -->
         <div class="footer-section contact-info">
             <h4>Contacto:</h4>
-            <p>Dirección: Calle Principal, Ciudad, País</p>
+            <p>Dirección: Calle Principal, Buenos Aires, Argentina</p>
             <p>Email: servicioscrowai@gmail.com</p>
             <p>Teléfono: +123 456 789</p>
         </div>
@@ -255,7 +172,7 @@
         <div class="footer-section">
             <h4>Acerca de:</h4>
             <div class="footer-links">
-                <a href="#">CrowAi servicios</a>
+                <a href="#">CrowAi</a>
                 <a href="#">Blog</a>
                 <a href="#">Contacto</a>
             </div>
@@ -266,14 +183,14 @@
             <div class="footer-links">
                 <a href="/Servicios CrowAi/activos/login/login.html">Iniciar</a>
                 <a href="/Servicios CrowAi/activos/crear-cuenta/crear-cuenta.html">Registrarse</a>
-                <a href="#">Mi servicios</a>
+                <a href="#"></a>
             </div>
         </div>
         <!-- Seccion de Ayuda -->
         <div class="footer-section">
             <h4>Ayuda:</h4>
             <div class="footer-links">
-                <a href="#">Publica tu servicio</a>
+                <a href="#">Publicá</a>
                 <a href="#">Resolucion de problemas</a>
                 <a href="#">Centro de seguridad</a>
             </div>
@@ -304,7 +221,7 @@
 
 </div>
 
-    <script src="/Servicios CrowAi/activos/js/js-pag-principal/script.js"></script>
+    <script src="/CrowAi/activos/js/js-pag-principal/script.js"></script>
 
 </body>
 </html>
