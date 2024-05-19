@@ -30,8 +30,9 @@ window.onscroll = function() {
 
 // -------------Informacion de productos------------
 
+let products = [];
+let total
 
-// PONER FUNCIONES DE MOSTRAR PRODUCTOS
 
 
 //----------------- FUNCION DE BUSQUEDA --------------------------
