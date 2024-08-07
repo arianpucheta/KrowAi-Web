@@ -37,7 +37,7 @@ function enviarMensajeWhatsApp() {
     const mensaje = `Hola!, estoy interesado/a en el cambio de modulo con un descuento que obtuve de la web!!`;
     const mensajeCodificado = encodeURIComponent(mensaje);
     const url = `https://wa.me/${numeroTelefono}?text=${mensajeCodificado}`;
-    window.open(url, '_blank'); 
+    window.open(url, '_blank');
 }
 
 // NUMERO 2 PARA CONTACTAR SOBRE UN LUGAR EN LA PLATAFORMA
