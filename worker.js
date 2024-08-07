@@ -1,4 +1,4 @@
-const version = "version 1";
+const version = "version 2";
 
 // Instalación del Service Worker
 self.addEventListener("install", e => {
