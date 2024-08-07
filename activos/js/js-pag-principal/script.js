@@ -30,9 +30,21 @@ window.onscroll = function() {
 
 // -------------Informacion de productos------------
 
+// NUMERO 1
+
 function enviarMensajeWhatsApp(nombreProducto, precioProducto) {
     const numeroTelefono = '541136479845';
-    const mensaje = `Hola!, me interesa el producto: ${nombreProducto} con precio: $${precioProducto}`;
+    const mensaje = `Hola!, estoy interesado/a en el cambio de modulo con un descuento que obtuve de la web!!`;
+    const mensajeCodificado = encodeURIComponent(mensaje);
+    const url = `https://wa.me/${numeroTelefono}?text=${mensajeCodificado}`;
+    window.open(url, '_blank');
+}
+
+// NUMERO 2 PARA CONTACTAR SOBRE UN LUGAR EN LA PLATAFORMA
+
+function enviarMensajeWhatsApp2 () {
+    const numeroTelefono = '541136479845';
+    const mensaje = `Hola!, me gustaria saber mas informacion sobre como formar parte de un espacio para publicar en la plataforma`;
     const mensajeCodificado = encodeURIComponent(mensaje);
     const url = `https://wa.me/${numeroTelefono}?text=${mensajeCodificado}`;
     window.open(url, '_blank');
