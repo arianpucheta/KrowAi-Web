@@ -32,7 +32,7 @@ window.onscroll = function() {
 
 // NUMERO 1
 
-function enviarMensajeWhatsApp(nombreProducto, precioProducto) {
+function enviarMensajeWhatsApp() {
     const numeroTelefono = '541136479845';
     const mensaje = `Hola!, estoy interesado/a en el cambio de modulo con un descuento que obtuve de la web!!`;
     const mensajeCodificado = encodeURIComponent(mensaje);
@@ -42,7 +42,7 @@ function enviarMensajeWhatsApp(nombreProducto, precioProducto) {
 
 // NUMERO 2 PARA CONTACTAR SOBRE UN LUGAR EN LA PLATAFORMA
 
-function enviarMensajeWhatsApp2 () {
+function enviarMensajeWhatsApp2() {
     const numeroTelefono = '541136479845';
     const mensaje = `Hola!, me gustaria saber mas informacion sobre como formar parte de un espacio para publicar en la plataforma`;
     const mensajeCodificado = encodeURIComponent(mensaje);
