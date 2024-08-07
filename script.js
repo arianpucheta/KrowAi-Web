@@ -1,16 +1,28 @@
 // CACHE
 
+// main.js (o dentro de una etiqueta <script> en index.html)
 
-// if ('serviceWorker' in navigator) {
-//     navigator.serviceWorker.register('worker.js')
-//         .then(() => {
-//             console.log();
-            
-//         })
-//         .catch(error => {
-//             console.log('Error al registrar el Service Worker:', error);
-//         });
-// }
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('worker.js').then(reg => {
+
+        reg.addEventListener('updatefound', () => {
+            const newWorker = reg.installing;
+            newWorker.addEventListener('statechange', () => {
+                if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                    console.log('Nueva versión disponible, recargando página...');
+                    window.location.reload();
+                }
+            });
+        });
+    }).catch(err => {
+        console.log('Error al registrar el Service Worker:', err);
+    });
+
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+        window.location.reload();
+    });
+}
+
 
 
 
