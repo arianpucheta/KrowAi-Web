@@ -322,7 +322,7 @@ a {
     border-radius: 10px;
 }
 
-.product-container:hover {
+.product-container:hover, .contactoPublicitario:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
     cursor: pointer;
 }
@@ -337,7 +337,7 @@ a {
     margin-bottom: 10px;
 }
 
-.button-add {
+.button-add, .boton-contactar {
     font-size: 16px;
     text-align: center;
     transition-duration: 0.4s;
@@ -349,7 +349,7 @@ a {
     margin: 20px;
 }
 
-.button-add:hover {
+.button-add:hover, .boton-contactar:hover {
     background-color: #00155a;
     color: #fff;
     cursor: pointer;
@@ -362,27 +362,6 @@ a {
     margin: 90px 70px;
     border-radius: 10px;
     padding: 20px;
-}
-.contactoPublicitario:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
-} 
-
-.boton-contactar {
-    font-size: 16px;
-    text-align: center;
-    transition-duration: 0.4s;
-    color: #000;
-    border: 2px solid #00155a;
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 10px 20px;
-    margin: 20px;
-}
-
-.boton-contactar:hover {
-    background-color: #00155a;
-    color: #fff;
-    cursor: pointer;
 }
 
 /*FOOTER INFORMACION*/
