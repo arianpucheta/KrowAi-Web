@@ -21,4 +21,4 @@ Primera version 0.1
 * Agregar funcion de carrito
 * Agregar mas integrantes a la pagina
 
-PRUEBA 2
+PRUEBA 3
