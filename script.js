@@ -1,16 +1,16 @@
 // CACHE
 
 
-if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('worker.js')
-        .then(() => {
-            console.log();
+// if ('serviceWorker' in navigator) {
+//     navigator.serviceWorker.register('worker.js')
+//         .then(() => {
+//             console.log();
             
-        })
-        .catch(error => {
-            console.log('Error al registrar el Service Worker:', error);
-        });
-}
+//         })
+//         .catch(error => {
+//             console.log('Error al registrar el Service Worker:', error);
+//         });
+// }
 
 
 
