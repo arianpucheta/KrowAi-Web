@@ -51,7 +51,7 @@ window.onscroll = function() {
 
 function enviarMensajeWhatsApp() {
     const numeroTelefono = '541136479845';
-    const mensaje = `Hola, estoy interesado/a en obtener información sobre el cambio de módulo con el descuento promocional ofrecido en su sitio web. Agradezco su atención.`;
+    const mensaje = `Hola, estoy interesado/a en obtener información sobre el servicio tecnico con el descuento promocional ofrecido en su sitio web. Agradezco su atención.`;
     const mensajeCodificado = encodeURIComponent(mensaje);
     const url = `https://wa.me/${numeroTelefono}?text=${mensajeCodificado}`;
     window.open(url, '_blank');
