@@ -1,10 +1,10 @@
 // worker.js
 
-const version = "version 1.2";
+const version = "version_1.2";
 
+// Instalación del Service Worker
 self.addEventListener("install", e => {
     console.log("Instalando Service Worker");
-    self.skipWaiting();  // Fuerza la activación del nuevo SW inmediatamente
     e.waitUntil(
         caches.open(version).then(cache => {
             return cache.addAll(["index.html"]).then(() => {
@@ -28,6 +28,8 @@ self.addEventListener("activate", e => {
                     }
                 })
             );
+        }).then(() => {
+            return self.clients.claim();
         })
     );
 });
@@ -48,3 +50,4 @@ self.addEventListener("fetch", e => {
         })
     );
 });
+

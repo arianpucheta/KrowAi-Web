@@ -1,6 +1,5 @@
 // CACHE
 
-// main.js (o dentro de una etiqueta <script> en index.html)
 
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('worker.js').then(reg => {
@@ -9,8 +8,8 @@ if ('serviceWorker' in navigator) {
             const newWorker = reg.installing;
             newWorker.addEventListener('statechange', () => {
                 if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                    console.log('Nueva versión disponible, recargando página...');
-                    window.location.reload();
+                    console.log('Nueva versión disponible');
+                    newWorker.postMessage({ action: 'skipWaiting' });
                 }
             });
         });
@@ -18,10 +17,12 @@ if ('serviceWorker' in navigator) {
         console.log('Error al registrar el Service Worker:', err);
     });
 
-    navigator.serviceWorker.addEventListener('controllerchange', () => {
-        window.location.reload();
-    });
+    // navigator.serviceWorker.addEventListener('controllerchange', () => {
+    //     console.log('Nueva versión del Service Worker controlando la página, recargando...');
+    //     window.location.reload();
+    // });
 }
+
 
 
 
